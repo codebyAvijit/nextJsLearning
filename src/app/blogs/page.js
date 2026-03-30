@@ -5,7 +5,7 @@ const BlogsPage = async () => {
     revalidate: 10, // Revalidate every 10 seconds
   });
   const blogs = await res.json();
-  console.log("Fetched Blogs:", blogs);
+  // console.log("Fetched Blogs:", blogs);
   return (
     <>
       <h1 className="text-4xl font-bold text-center mt-10">Blogs</h1>

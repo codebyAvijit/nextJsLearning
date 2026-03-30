@@ -1,3 +1,5 @@
+import ThemeContextProvider from "@/context/ThemeContext";
+import ReduxProvider from "@/store/reduxProvider";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeContextProvider>
+          <ReduxProvider>{children}</ReduxProvider>
+        </ThemeContextProvider>
+      </body>
     </html>
   );
 }

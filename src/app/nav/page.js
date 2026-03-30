@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "@/hooks/useTheme";
 import Link from "next/link";
 import React from "react";
 
@@ -19,8 +20,8 @@ const Nav = () => {
           </Link>
         </p>
         <p className="text-center mt-4 mb-4 text-gray-600">
-          <Link href="/services" className="text-white hover:underline">
-            Services
+          <Link href="/practice" className="text-white hover:underline">
+            Practice
           </Link>
         </p>
         <p className="text-center mt-4 mb-4 text-gray-600">

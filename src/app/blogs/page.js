@@ -4,6 +4,7 @@ const BlogsPage = async () => {
   const res = await fetch("https://api.vercel.app/blog?_limit=10", {
     revalidate: 10, // Revalidate every 10 seconds
   });
+
   const blogs = await res.json();
   // console.log("Fetched Blogs:", blogs);
   return (

@@ -1,0 +1,15 @@
+
+> nextjslearning@0.1.0 start
+> next start
+
+▲ Next.js 16.2.1
+- Local:         http://localhost:3000
+- Network:       http://172.16.17.105:3000
+✓ Ready in 57ms
+Error: ENOENT: no such file or directory, open '/Users/avijit/avi/nextjslearning/.next/prerender-manifest.json'
+    at ignore-listed frames {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/avijit/avi/nextjslearning/.next/prerender-manifest.json'
+}
